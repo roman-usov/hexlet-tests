@@ -1,7 +1,6 @@
 const capitalize = (str) => {
-  if(str === '') return str;
 
-  const [firstChar, ...rest] = str;
+  const [firstChar = '', ...rest] = str;
 
   return `${firstChar.toUpperCase()}${rest.join('')}`;
 };
